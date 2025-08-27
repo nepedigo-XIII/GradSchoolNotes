@@ -151,6 +151,10 @@ The **Exponential Smoothing** method is expressed as:
 
 $F_{t+1} = F_t + \alpha (A_t - F_t)$
 
+or
+
+$F_{t+1} = \alpha A_t + (1 - \alpha) F_t$
+
 where  
 
 - $F_{t+1}$ = forecast for the next period  
