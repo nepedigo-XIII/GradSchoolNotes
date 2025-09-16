@@ -150,6 +150,9 @@ $$
 - **Business risk:** competition, product liability, operating leverage  
 - **Financial risk:** depends only on financing mix (more debt = more concentrated risk for equityholders)  
 
+Leverage amplifies the expected return and expected risk to shareholders, which if they are now also the decision makers for the firm, increases their stake in the game, incentivizes them to work harder, and thus increases firm value.
+
+
 ---
 
 ## Example: No Leverage
