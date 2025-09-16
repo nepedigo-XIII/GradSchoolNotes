@@ -33,9 +33,11 @@
 ---
 
 ## WACC – No Taxes
+
 $$
 WACC = w_d r_d + w_e r_e
 $$
+
 - $w$ = weights of debt/equity in capital structure  
 - $r$ = cost of each component  
 
@@ -44,6 +46,7 @@ Example: in a 50/50 equity–debt firm, $w_e = w_d = 0.5$
 ---
 
 ## WACC – With Taxes (Interest Deductible)
+
 $$
 WACC = w_d r_d (1-T) + w_e r_e
 $$
@@ -120,6 +123,7 @@ $$
 ---
 
 ## WACC Formula Recap
+
 $$
 WACC = w_d r_d (1-T) + w_e r_e
 $$
