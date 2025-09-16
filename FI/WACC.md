@@ -87,6 +87,7 @@ $$
 
 ## Cost of Equity
 Use **CAPM**:
+
 $$
 r_e = r_f + \beta (r_m - r_f)
 $$
