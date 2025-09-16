@@ -28,6 +28,7 @@
   - **Cost of equity capital**  
   - **Cost of debt capital**  
 - Weighted by their proportion in the firm’s capital structure  
+- Used as the firm’s **hurdle rate** for typical projects, returns should exceed WACC, otherwise capital is better off elsewhere 
 
 ---
 
