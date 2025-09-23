@@ -197,3 +197,11 @@ Leverage amplifies both return **and** risk.
 - More debt → higher payout until bankruptcy risk grows  
 
 ---
+
+## Notes on Leverage
+
+Leverage is capable of increasing Beta values. By promising a portion of the stable cash flows, the remaining cash flows going to the equity holder becomes more volatile and similar to the firm with high business risk.
+
+You can take a low business equity funded business, debt it like crazy and then increase its beta as a result, which is what was done in Barbarians at the Gate. Example of getting your tenet to be better behaved. 
+
+Debt inherently doesn't change the value of the business itself.
