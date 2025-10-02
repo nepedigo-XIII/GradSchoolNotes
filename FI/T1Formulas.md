@@ -145,8 +145,8 @@ $$
 R_e = R_f + \beta \cdot MRP
 $$
 
-- $ R_e $ = Cost of equity  
-- $ R_f $ = Risk-free rate  
-- $ \beta $ = Beta of the company  
-- $ E(R_m) $ = Expected return on the market  
-- $ MRP = E(R_m) - R_f $ = Market risk premium  
+- $R_e$ = Cost of equity  
+- $R_f$ = Risk-free rate  
+- $\beta$ = Beta of the company  
+- $E(R_m)$ = Expected return on the market  
+- $MRP = E(R_m) - R_f$ = Market risk premium  
