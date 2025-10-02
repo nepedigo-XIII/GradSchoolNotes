@@ -5,7 +5,7 @@ P = \sum_{t=1}^{T} \frac{C}{(1+y)^t} + \frac{F}{(1+y)^T}
 $$
 
 - $P$ = Price of the bond  
-- $C$ = Annual coupon payment $ (F \cdot c) $  
+- $C$ = Annual coupon payment $(F \cdot c)$  
 - $F$ = Face value of bond  
 - $c$ = Coupon rate  
 - $y$ = Yield to maturity (YTM) per period  
@@ -33,7 +33,7 @@ $$
 NPV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t} - C_0
 $$
 
-- $CF_t$ = Cash flow at time $ t $  
+- $CF_t$ = Cash flow at time $t$  
 - $r$ = Discount rate  
 - $C_0$ = Initial investment (outflow)  
 - $n$ = Number of periods  
@@ -48,7 +48,7 @@ $$
 0 = \sum_{t=1}^{n} \frac{CF_t}{(1+IRR)^t} - C_0
 $$
 
-- $CF_t$ = Cash flow at time $ t $  
+- $CF_t$ = Cash flow at time $t$  
 - $IRR$ = Internal Rate of Return  
 - $C_0$ = Initial investment  
 - $n$ = Number of periods  
@@ -62,7 +62,7 @@ PI = \frac{\sum_{t=1}^{n} \frac{CF_t}{(1+r)^t}}{C_0}
 $$
 
 - $PI$ = Profitability index  
-- $CF_t$ = Cash flow at time $ t $  
+- $CF_t$ = Cash flow at time $t$  
 - $r$ = Discount rate  
 - $C_0$ = Initial investment  
 - $n$ = Number of periods  
@@ -91,7 +91,7 @@ D = \frac{\sum_{t=1}^{T} \left( \frac{t \cdot CF_t}{(1+y)^t} \right)}{P}
 $$
 
 - $D$ = Macaulay duration  
-- $CF_t$ = Cash flow at time $ t $  
+- $CF_t$ = Cash flow at time $t$  
 - $y$ = Yield per period  
 - $P$ = Price of the bond  
 - $T$ = Number of periods to maturity  
@@ -113,8 +113,8 @@ R_f = E(R_i) - \beta_i \cdot MRP
 $$
 
 - $R_f$ = Risk-free rate  
-- $E(R_i)$ = Expected return of asset $ i $  
-- $\beta_i$ = Beta of asset $ i $  
+- $E(R_i)$ = Expected return of asset $i$  
+- $\beta_i$ = Beta of asset $i$  
 - $E(R_m)$ = Expected market return  
 - $MRP = E(R_m) - R_f$ = Market risk premium  
 
@@ -134,7 +134,7 @@ $$
 DCF_T = \frac{C + F}{(1+y)^T}
 $$
 
-- $DCF_t$ = Discounted cash flow at time $ t $  
+- $DCF_t$ = Discounted cash flow at time $t$  
 - $C$ = Coupon payment  
 - $y$ = Yield per period  
 - $F$ = Face value of bond (principal)  
