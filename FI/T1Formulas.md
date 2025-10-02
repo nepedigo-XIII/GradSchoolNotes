@@ -11,6 +11,7 @@ $$
 - $y$ = Yield to maturity (YTM) per period  
 - $T$ = Number of periods to maturity  
 
+---
 
 ### 2. Yield to Maturity (Approximation)
 
@@ -24,6 +25,7 @@ $$
 - $P$ = Price of the bond  
 - $T$ = Number of periods to maturity  
 
+---
 
 ### 3. Net Present Value (NPV)
 
@@ -36,6 +38,7 @@ $$
 - $C_0$ = Initial investment (outflow)  
 - $n$ = Number of periods  
 
+---
 
 ### 4. Internal Rate of Return (IRR)
 
@@ -50,6 +53,7 @@ $$
 - $C_0$ = Initial investment  
 - $n$ = Number of periods  
 
+---
 
 ### 5. Profitability Index (PI)
 
@@ -63,6 +67,7 @@ $$
 - $C_0$ = Initial investment  
 - $n$ = Number of periods  
 
+---
 
 ### 6. Weighted Average Cost of Capital (WACC)
 
@@ -77,6 +82,7 @@ $$
 - $R_d$ = Cost of debt  
 - $T_c$ = Corporate tax rate  
 
+---
 
 ### 7. Macaulay Duration
 
@@ -90,6 +96,7 @@ $$
 - $P$ = Price of the bond  
 - $T$ = Number of periods to maturity  
 
+---
 
 ### 8. Risk-Free Rate (Rearranged CAPM)
 
@@ -111,6 +118,7 @@ $$
 - $E(R_m)$ = Expected market return  
 - $MRP = E(R_m) - R_f$ = Market risk premium  
 
+---
 
 ### 9. Bond Coupon Cashflows (Discounted)
 
@@ -132,6 +140,7 @@ $$
 - $F$ = Face value of bond (principal)  
 - $T$ = Number of periods to maturity  
 
+---
 
 ### 10. Cost of Equity (CAPM)
 
