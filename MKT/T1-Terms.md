@@ -2,7 +2,7 @@
 
 ---
 
-## 🧭 I. External Analysis
+## **`I. External Analysis`**
 
 ### 1. PESTEL Framework
 **Purpose:**  
@@ -52,7 +52,14 @@ Used to analyze the **marketing environment** and **strategic context**.
 
 ---
 
-## 🏛 II. Internal Analysis
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+##  **`II. Internal Analysis`**
 
 ### 1. VRIN Framework
 **Purpose:**  
@@ -105,7 +112,13 @@ $$
 
 ---
 
-## 🎯 III. Market Strategy and Positioning
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## **`III. Market Strategy and Positioning`**
 
 ### 1. Segmentation, Targeting, and Positioning (STP)
 
@@ -144,6 +157,12 @@ $$
 > Warning: Firms caught in the middle (no clear strategy) often perform poorly.
 
 ---
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 🧩 IV. Integration & Strategic Fit
 
