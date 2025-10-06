@@ -162,31 +162,37 @@ $$
 ## Compact Reference
 
 **Price (annual coupons):**
+
 $$
 V_B = \sum_{t=1}^{N}\frac{cM}{(1+k_d)^t} + \frac{M}{(1+k_d)^N}
 $$
 
 **Premium/Par/Discount rule:**  
+
 - $k_d < c \Rightarrow$ premium  
 - $k_d = c \Rightarrow$ par  
 - $k_d > c \Rightarrow$ discount  
 
 **YTM (solve $k_d$ from price):**
+
 $$
 P = \sum_{t=1}^{N}\frac{CF_t}{(1+k_d)^t}
 $$
 
 **Zero price:** 
+
 $$
 P = \frac{M}{(1+y)^N}
 $$
 
 **Macaulay duration:** 
+
 $$
 D_{\text{Mac}} = \sum_{t=1}^{N} \frac{t \cdot \dfrac{CF_t}{(1+y)^t}}{P}
 $$
 
 **Modified duration & price-change approximation:** 
+
 $$
 D_{\text{mod}} = \frac{D_{\text{Mac}}}{1+y}, \qquad
 \frac{\Delta P}{P} \approx -D_{\text{mod}}\Delta y
