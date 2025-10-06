@@ -36,6 +36,33 @@ Evaluates the **competitive structure** of an industry and its **profit potentia
 - **Supplier Power:** Stems from **input uniqueness**, **few substitutes**, **importance of supplier to buyer**, and **threat of forward integration**.
 - **Competitive Power:** Determined by **market growth**, **exit barriers**, **product differentiation**, and **cost structure**.
 
+
+### Five Forces Supplier vs Buyer Power — Profit Impact
+
+Profit formula:
+
+$$  
+\pi = (P - C_v)Q - F  
+$$  
+
+- $$P$$: price per unit  
+- $$C_v$$: variable (supplier) cost  
+- $$F$$: fixed cost  
+- $$Q$$: quantity sold  
+
+**High Supplier Power →** ↑ $$C_v$$ → ↓ margin → ↓ profit  
+**High Buyer Power →** ↓ $$P$$ → ↓ revenue → ↓ profit  
+
+Both create a **margin squeeze**:
+
+$$  
+\pi = (P_{\downarrow} - C_{v\uparrow})Q - F  
+$$  
+
+**Strategic responses:**  
+- Cut dependency or integrate suppliers (supplier power)  
+- Differentiate products or build loyalty (buyer power)
+
 ---
 
 ### 3. 5Cs Framework
