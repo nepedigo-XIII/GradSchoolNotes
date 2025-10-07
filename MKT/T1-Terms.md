@@ -336,7 +336,7 @@ $$
 <br>
 <br>
 
-## 🧩 IV. Integration & Strategic Fit
+## IV. Integration & Strategic Fit
 
 - **External Analysis (PESTEL, 5 Forces, 5Cs)** → Identifies **opportunities and threats**.  
 - **Internal Analysis (VRIN, RBV, Operating Leverage)** → Reveals **strengths and weaknesses**.  
@@ -351,7 +351,7 @@ $$
 
 ---
 
-# 🧠 Key Takeaways
+# Key Takeaways
 
 - **PESTEL** and **5 Forces** assess **macro** and **industry** conditions.  
 - **VRIN** and **RBV** uncover **internal sources of advantage**.  
