@@ -93,7 +93,7 @@ Evaluates the **competitive structure** of an industry and its **profit potentia
    - Example: Cars, trains, and buses substitute for airlines → **High Threat**  
    - Substitutes cap the ability to charge high prices.
 
-#### 💡 Types of Power in Five Forces
+#### Types of Power in Five Forces
 - **Buyer Power:** Comes from **concentration**, **price sensitivity**, **information**, and **switching ease**.
 - **Supplier Power:** Stems from **input uniqueness**, **few substitutes**, **importance of supplier to buyer**, and **threat of forward integration**.
 - **Competitive Power:** Determined by **market growth**, **exit barriers**, **product differentiation**, and **cost structure**.
@@ -161,7 +161,7 @@ Used to assess whether a firm’s resources and capabilities can lead to **susta
 | **I – Inimitable** | Difficult or costly to copy (e.g., due to unique history, causal ambiguity, social complexity). | Sustains advantage. |
 | **N – Non-substitutable** | No equivalent resources that can replace it. | Maintains competitive moat. |
 
-✅ **If all four are met**, the firm has a **sustainable competitive advantage**.
+> **If all four are met**, the firm has a **sustainable competitive advantage**.
 
 ---
 
@@ -185,8 +185,9 @@ High operating leverage means **profits are more sensitive** to sales changes.
 Formula:
 
 $$
-\text{Degree of Operating Leverage (DOL)} = 
-\frac{\%\ \text{Change in Operating Income}}{\%\ \text{Change in Sales}}
+\text{Degree of Operating Leverage (DOL)} 
+= 
+\frac{\Delta \text{Operating Income} / \text{Operating Income}}{\Delta \text{Sales} / \text{Sales}}
 $$
 
 or equivalently,
