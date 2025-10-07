@@ -185,9 +185,7 @@ High operating leverage means **profits are more sensitive** to sales changes.
 Formula:
 
 $$
-\text{Degree of Operating Leverage (DOL)} 
-= 
-\frac{\Delta \text{Operating Income} / \text{Operating Income}}{\Delta \text{Sales} / \text{Sales}}
+\text{Degree of Operating Leverage (DOL)}= \frac{\Delta \text{Operating Income} / \text{Operating Income}}{\Delta \text{Sales} /\te{Sales}}
 $$
 
 or equivalently,
