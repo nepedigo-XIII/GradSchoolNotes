@@ -11,6 +11,16 @@
 Industry accounts for **10–20% of profitability**.  
 
 
+### Readings
+
+- Reading 1: Framework for Marketing Strategy Formation
+- Reading 2: Competitive Strategies
+- Reading 4: Segmentation and Targeting
+- Reading 5: Brand Positioning
+- Reading 6: Brands and Brand Equity
+
+---
+
 ## **`I. External Analysis`**
 
 ### 1. PESTEL Framework
