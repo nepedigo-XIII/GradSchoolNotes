@@ -2,6 +2,15 @@
 
 ---
 
+### Marketing
+- Activity, institutions, and processes for:
+  - Creating, communicating, delivering, and exchanging **value**.  
+- Not just intuition → requires analytical & strategic thinking.  
+- Strategic decisions → create/sustain competitive advantage.
+
+Industry accounts for **10–20% of profitability**.  
+
+
 ## **`I. External Analysis`**
 
 ### 1. PESTEL Framework
@@ -30,6 +39,49 @@ Evaluates the **competitive structure** of an industry and its **profit potentia
 | **3. Threat of Substitutes** | Availability of products meeting similar needs. | Substitutes cap industry pricing power. |
 | **4. Bargaining Power of Buyers** | Ability of customers to influence price or quality. | Few buyers + standardized product = high buyer power. |
 | **5. Bargaining Power of Suppliers** | Influence of suppliers on input costs and availability. | Few suppliers or differentiated input = high supplier power. |
+
+
+1. **Bargaining Power of Buyers**  
+   - Customers (B2C or B2B) can squeeze industry profit margins.  
+   - Determinants:  
+     - Size/concentration of buyers  
+     - Price sensitivity  
+     - Availability of alternatives  
+     - Low risk of switching  
+   - Example: Airline passengers are very price sensitive → **High Buyer Power**
+
+2. **Bargaining Power of Suppliers**  
+   - Suppliers can increase input costs, reducing industry profitability.  
+   - Determinants:  
+     - Supplier concentration vs. fragmented buyers  
+     - Differentiated or unique inputs  
+     - Switching costs  
+   - Example: Aircraft manufacturers (Boeing, Airbus) or engine providers (GE, Rolls Royce) → **High Supplier Power**
+
+3. **Intensity of Rivalry**  
+   - Aggressive competition reduces profitability.  
+   - Manifestations: price wars, advertising wars, frequent product introductions.  
+   - Determinants:  
+     - Many similar-sized competitors  
+     - Low product differentiation  
+     - High fixed costs, overcapacity  
+     - Slow industry growth  
+   - Example: Airlines → **High Rivalry**
+
+4. **Threat of New Entrants**  
+   - New competitors erode profits by increasing supply and competition.  
+   - Entry barriers determine this force:  
+     - Capital requirements  
+     - Proprietary knowledge  
+     - Economies of scale  
+     - Strong brands  
+     - Contracts and regulations  
+   - Example: Post-deregulation airlines saw many new entrants → **Medium Threat**
+
+5. **Threat of Substitutes**  
+   - Products from outside the industry that satisfy the same need.  
+   - Example: Cars, trains, and buses substitute for airlines → **High Threat**  
+   - Substitutes cap the ability to charge high prices.
 
 #### 💡 Types of Power in Five Forces
 - **Buyer Power:** Comes from **concentration**, **price sensitivity**, **information**, and **switching ease**.
@@ -184,6 +236,99 @@ $$
 > Warning: Firms caught in the middle (no clear strategy) often perform poorly.
 
 ---
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+## Types of Value
+
+**1. Economic Value**  
+- Based on **cost savings** or **monetary benefits** gained from using the product.  
+- Customers weigh total benefits against price paid.  
+- *Example:* Walmart’s low prices or energy-efficient appliances that reduce bills.
+
+**2. Functional Value**  
+- Related to the **performance**, **reliability**, and **utility** of the product.  
+- Solves a specific problem or performs a task effectively.  
+- *Example:* A Dyson vacuum’s suction power or an iPhone’s camera quality.
+
+**3. Experiential Value**  
+- Arises from **sensory**, **emotional**, or **cognitive experiences** associated with the product.  
+- Includes enjoyment, aesthetics, and user experience.  
+- *Example:* Disney theme parks or Starbucks’ atmosphere.
+
+**4. Social Value**  
+- Derived from the **status**, **prestige**, or **group belonging** a product conveys.  
+- *Example:* Owning a Rolex or driving a Tesla.
+
+---
+
+## Product–Market Matrix (Ansoff Matrix)
+
+**Purpose:** Framework for identifying growth strategies based on products and markets.
+
+| Strategy | Product | Market | Risk | Description |
+|:--|:--|:--|:--|:--|
+| **Market Penetration** | Existing | Existing | Low | Boost sales through price cuts, promotion, or loyalty programs. |
+| **Market Development** | Existing | New | Medium | Enter new segments or geographic regions. |
+| **Product Development** | New | Existing | Medium | Introduce new or improved products to current customers. |
+| **Diversification** | New | New | High | Expand into entirely new products and markets. |
+
+**Conceptual View:**
+
+$$
+\text{Growth Strategy} = f(\text{Newness of Product}, \text{Newness of Market})
+$$
+
+---
+
+## Brand & Brand Equity
+
+**Brand:**  
+A distinctive name, symbol, or identity that differentiates a company’s offerings.
+
+**Brand Equity:**  
+The **added intangible value** a strong brand provides to both consumers and the firm.
+
+| Component | Description |
+|:--|:--|
+| **Brand Awareness** | How easily customers recognize and recall the brand. |
+| **Perceived Quality** | Customer perception of product excellence or superiority. |
+| **Brand Associations** | Thoughts, emotions, or experiences tied to the brand. |
+| **Brand Loyalty** | Repeat purchasing and attachment to the brand. |
+
+**Conceptual Formula:**
+
+$$
+\text{Brand Equity} = 
+f(\text{Awareness}, \text{Perceived Quality}, \text{Associations}, \text{Loyalty})
+$$
+
+---
+
+## Brand Growth Strategies
+
+| Strategy | Description | Example |
+|:--|:--|:--|
+| **Line Extension** | New variations under same brand in same category. | Coca-Cola → Cherry Coke. |
+| **Brand Extension** | Use of existing brand in a new category. | Nike → Nike Watches. |
+| **Multibranding** | Multiple brands within same product category. | P&G’s Tide, Gain, Cheer. |
+| **New Brand** | Entirely new brand and category. | Toyota → Lexus. |
+
+**Strategic Logic:**
+
+$$
+\text{Brand Growth Potential} = 
+f(\text{Brand Strength}, \text{Category Fit}, \text{Customer Acceptance})
+$$
 
 <br>
 <br>
