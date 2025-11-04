@@ -232,7 +232,7 @@ $$
 $$
 
 Where:  
-- \( L \) = Portfolio loss  
-- \( \alpha \) = Confidence level (e.g., 99%)  
-- \( \text{VaR}_{\alpha} \) = Threshold loss exceeded only \( 1 - \alpha \) fraction of the time  
+- \text{L} = Portfolio loss  
+- \text{\alpha} = Confidence level (e.g., 99%)  
+- \text{VaR}_{\alpha} = Threshold loss exceeded only \( 1 - \text{\alpha} \) fraction of the time  
 
