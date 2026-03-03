@@ -895,6 +895,14 @@ Individuals avoid misconduct if perceived costs outweigh benefits.
 **Critical Point:**  
 Perception of enforcement matters more than written policy.
 
+### Specific Deterrence
+
+Repercussions given directly for violators as a result of their actions.
+
+### General (ic) Deterrence
+
+The broader effect of sanctions on the general population, influencing behavior through fear of consequences when witnessing the administration of specific deterrence to others.
+
 ---
 
 ## Whitman & Mattord (2019) – Deterrence Conditions
