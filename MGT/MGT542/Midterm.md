@@ -263,7 +263,7 @@ How memorable the message is.
 
 ------------------------------------------------------------------------
 
-# 7. Sticky Messages -- SUCCESs Framework
+# 7. Sticky Messages - SUCCESs Framework
 
 **Simple**:  Identify the core idea
 **Unexpected**:  Break patterns to gain attention
