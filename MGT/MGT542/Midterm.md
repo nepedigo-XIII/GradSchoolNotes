@@ -1,4 +1,4 @@
-# Communication & Messaging -- Exam Study Guide
+# MGT542 Midterm Study Guide
 
 ## 1. Message Intent Types
 
@@ -7,11 +7,16 @@
 Purpose: Deliver facts or updates without attempting to influence
 attitudes or behavior.
 
-Characteristics: - Neutral tone - Fact‑based - Focus on clarity and
+Characteristics: 
+- Neutral tone 
+- Fact‑based 
+- Focus on clarity and
 accuracy
 
-Risks: - Information overload - Low engagement - Misinterpretation
-without context
+Risks: 
+- Information overload 
+- Low engagement 
+- Misinterpretation without context
 
 ------------------------------------------------------------------------
 
@@ -19,10 +24,14 @@ without context
 
 Purpose: Influence beliefs, attitudes, or decisions.
 
-Characteristics: - Uses logic (logos), credibility (ethos), and emotion
-(pathos) - Structured arguments - Clear call to action
+Characteristics: 
+- Uses logic (logos), credibility (ethos), and emotion (pathos) 
+- Structured arguments 
+- Clear call to action
 
-Risks: - Audience skepticism - Weak evidence damaging credibility
+Risks: 
+- Audience skepticism 
+- Weak evidence damaging credibility
 
 ------------------------------------------------------------------------
 
@@ -30,11 +39,14 @@ Risks: - Audience skepticism - Weak evidence damaging credibility
 
 Purpose: Tell the audience what actions to take.
 
-Characteristics: - Clear instructions - Often hierarchical - Focus on
-operational action
+Characteristics: 
+- Clear instructions 
+- Often hierarchical 
+- Focus on operational action
 
-Risks: - Resistance if tone feels authoritarian - Confusion if
-instructions lack clarity
+Risks: 
+- Resistance if tone feels authoritarian 
+- Confusion if instructions lack clarity
 
 ------------------------------------------------------------------------
 
@@ -42,9 +54,14 @@ instructions lack clarity
 
 Purpose: Maintain or improve relationships and trust.
 
-Examples: - Feedback - Apologies - Recognition
+Examples: 
+- Feedback 
+- Apologies 
+- Recognition
 
-Risks: - Emotional escalation - Misinterpreted tone
+Risks: 
+- Emotional escalation 
+- Misinterpreted tone
 
 ------------------------------------------------------------------------
 
@@ -52,10 +69,13 @@ Risks: - Emotional escalation - Misinterpreted tone
 
 Purpose: Capture attention and create emotional engagement.
 
-Characteristics: - Storytelling - Emotion-driven messaging - Memorable
-presentation
+Characteristics: 
+- Storytelling 
+- Emotion-driven messaging 
+- Memorable presentation
 
-Risks: - Message overshadowed by entertainment
+Risks: 
+- Message overshadowed by entertainment
 
 ------------------------------------------------------------------------
 
@@ -63,32 +83,51 @@ Risks: - Message overshadowed by entertainment
 
 ### Non‑Sensitive Messages
 
-Examples: - Routine updates - Task assignments - Scheduling information
+Examples: 
+- Routine updates 
+- Task assignments 
+- Scheduling information
 
-Characteristics: - Low emotional impact - Efficiency-focused
+Characteristics: 
+- Low emotional impact 
+- Efficiency-focused
 
-Risks: - Message fatigue - Ignored communications
+Risks: 
+- Message fatigue 
+- Ignored communications
 
 ------------------------------------------------------------------------
 
 ### Sensitive Messages
 
-Examples: - Performance feedback - Layoffs - Conflict discussions
+Examples: 
+- Performance feedback 
+- Layoffs 
+- Conflict discussions
 
-Characteristics: - High emotional stakes - Requires careful tone and
-delivery
+Characteristics: 
+- High emotional stakes 
+- Requires careful tone and delivery
 
-Risks: - Defensive reactions - Emotional escalation - Misinterpretation
+Risks: 
+- Defensive reactions 
+- Emotional escalation 
+- Misinterpretation
 
 ------------------------------------------------------------------------
 
 ### Causes of Misidentifying Sensitivity
 
-Common causes: - Sender perspective bias - Cultural differences -
-Overreliance on written communication - Poor audience analysis
+Common causes: 
+- Sender perspective bias 
+- Cultural differences 
+- Overreliance on written communication 
+- Poor audience analysis
 
-Prevention: - Evaluate emotional impact - Consider audience identity and
-status - Default to higher sensitivity when uncertain
+Prevention: 
+- Evaluate emotional impact 
+- Consider audience identity and status 
+- Default to higher sensitivity when uncertain
 
 ------------------------------------------------------------------------
 
@@ -130,23 +169,36 @@ status - Default to higher sensitivity when uncertain
 
 ### Formal Writing
 
-Characteristics: - Structured grammar - Objective tone - Professional
-vocabulary
+Characteristics: 
+- Structured grammar 
+- Objective tone 
+- Professional vocabulary
 
-Examples: - Academic writing - Legal documents - Executive reports
+Examples: 
+- Academic writing 
+- Legal documents 
+- Executive reports
 
-Risks: - Complexity reducing readability
+Risks: 
+- Complexity reducing readability
 
 ------------------------------------------------------------------------
 
 ### Informal Writing
 
-Characteristics: - Conversational tone - Short sentences - Flexible
-structure
+Characteristics: 
+- Conversational tone 
+- Short sentences 
+- Flexible structure
 
-Examples: - Team messages - Social media - Internal updates
+Examples: 
+- Team messages 
+- Social media 
+- Internal updates
 
-Risks: - Reduced professionalism - Tone misinterpretation
+Risks: 
+- Reduced professionalism 
+- Tone misinterpretation
 
 ------------------------------------------------------------------------
 
@@ -156,7 +208,11 @@ Risks: - Reduced professionalism - Tone misinterpretation
 
 Signals emotional intent.
 
-Examples: - Supportive - Neutral - Urgent - Authoritative
+Examples: 
+- Supportive 
+- Neutral 
+- Urgent 
+- Authoritative
 
 ------------------------------------------------------------------------
 
@@ -209,22 +265,22 @@ How memorable the message is.
 
 # 7. Sticky Messages -- SUCCESs Framework
 
-Simple -- Identify the core idea\
-Unexpected -- Break patterns to gain attention\
-Concrete -- Use vivid examples\
-Credible -- Provide believable evidence\
-Emotional -- Connect to audience values\
-Stories -- Use narratives to motivate action
+**Simple**:  Identify the core idea
+**Unexpected**:  Break patterns to gain attention
+**Concrete**:  Use vivid examples
+**Credible**:  Provide believable evidence
+**Emotional**:  Connect to audience values
+**Stories**:  Use narratives to motivate action
 
 ------------------------------------------------------------------------
 
 # 8. Strategic Story Types
 
-Story of Me -- personal credibility and motivation\
-Story of Us -- shared identity and collective values\
-Story of an Idea -- origin or importance of a concept\
-Story of Others -- examples or case studies\
-Story of the Audience -- audience positioned as the hero
+**Story of Me**: personal credibility and motivation
+**Story of Us**: shared identity and collective values
+**Story of an Idea**:  origin or importance of a concept
+**Story of Others**:  examples or case studies
+**Story of the Audience**:  audience positioned as the hero
 
 ------------------------------------------------------------------------
 
@@ -232,44 +288,44 @@ Story of the Audience -- audience positioned as the hero
 
 ### Language Processing
 
-Broca's Area -- speech production\
-Wernicke's Area -- language comprehension\
-Primary Auditory Cortex -- processing speech sounds\
-Visual Cortex -- processing text and visual cues\
-Motor Cortex -- speaking, typing, gesturing
+**Broca's Area**:  speech production
+**Wernicke's Area**:  language comprehension
+**Primary Auditory Cortex**:  processing speech sounds
+**Visual Cortex**:  processing text and visual cues
+**Motor Cortex**:  speaking, typing, gesturing
 
 ------------------------------------------------------------------------
 
 ### Emotional & Social Processing
 
-Amygdala -- emotional threat detection\
-Insula -- empathy and internal emotional awareness\
-Anterior Cingulate Cortex -- conflict detection and emotional
-regulation\
-Medial Prefrontal Cortex -- social reasoning
+**Amygdala**:  emotional threat detection
+**Insula**:  empathy and internal emotional awareness
+**Anterior Cingulate Cortex**:  conflict detection and emotional
+regulation
+**Medial Prefrontal Cortex**:  social reasoning
 
 ------------------------------------------------------------------------
 
 ### Executive Communication Control
 
-Dorsolateral Prefrontal Cortex -- reasoning and planning\
-Inferior Frontal Gyrus -- tone regulation and impulse control\
-Supplementary Motor Area -- coordination of speech and gestures
+**Dorsolateral Prefrontal Cortex**:  reasoning and planning
+**Inferior Frontal Gyrus**:  tone regulation and impulse control
+**Supplementary Motor Area**:  coordination of speech and gestures
 
 ------------------------------------------------------------------------
 
 # 10. Brain Response by Message Type
 
-Informational -- language comprehension networks\
-Persuasive -- logic and emotional systems\
-Directive -- motor planning and control systems\
-Relational -- social cognition networks\
-Entertainment -- reward systems
+**Informational**:  language comprehension networks
+**Persuasive**:  logic and emotional systems
+**Directive**:  motor planning and control systems
+**Relational**:  social cognition networks
+**Entertainment**:  reward systems
 
 Key neurochemicals:
 
-Dopamine -- reward and motivation\
-Oxytocin -- social bonding and trust
+**Dopamine**:  reward and motivation
+**Oxytocin**:  social bonding and trust
 
 ------------------------------------------------------------------------
 
@@ -279,7 +335,7 @@ Oxytocin -- social bonding and trust
 
 Acceptance of unequal power distribution.
 
-Low: US, UK\
+Low: US, UK
 High: China, India
 
 ------------------------------------------------------------------------
@@ -292,7 +348,7 @@ Collectivism: Focus on group harmony.
 
 Examples:
 
-Individualist: US, Australia\
+Individualist: US, Australia
 Collectivist: China, Japan
 
 ------------------------------------------------------------------------
@@ -305,16 +361,20 @@ Low: Comfort with ambiguity.
 
 Examples:
 
-High: Japan, Greece\
+High: Japan, Greece
 Low: US, Singapore
 
 ------------------------------------------------------------------------
 
 ### Masculinity vs Femininity
 
-Masculine cultures emphasize: - Competition - Achievement
+Masculine cultures emphasize: 
+- Competition 
+- Achievement
 
-Feminine cultures emphasize: - Cooperation - Quality of life
+Feminine cultures emphasize: 
+- Cooperation 
+- Quality of life
 
 ------------------------------------------------------------------------
 
