@@ -1140,24 +1140,30 @@ Each factor is rated to determine an overall risk score.
 
 A full backup copies **all data**.
 
-Advantages: - easiest to restore
+Advantages: 
+- easiest to restore
 
-Disadvantages: - time consuming - large storage requirements
+Disadvantages: 
+- time consuming 
+- large storage requirements
 
 ### Differential Backup
 
 Copies all data changed **since the last full backup**.
 
-Restoration requires: - last full backup - most recent differential
-backup
+Restoration requires: 
+- last full backup 
+- most recent differential backup
 
 ### Incremental Backup
 
 Copies all data changed **since the last backup of any type**.
 
-Advantages: - smaller and faster backups
+Advantages: 
+- smaller and faster backups
 
-Disadvantages: - restoration requires multiple backup sets.
+Disadvantages: 
+- restoration requires multiple backup sets.
 
 ### Hierarchical Storage Management (HSM)
 
@@ -1184,21 +1190,25 @@ Identify potential security incidents through:
 
 Limit the damage by isolating affected systems or networks.
 
-Examples: - disconnect compromised machines - disable compromised
-accounts
+Examples: 
+- disconnect compromised machines 
+- disable compromised accounts
 
 ### 3. Eradication
 
 Remove the root cause of the incident.
 
-Examples: - deleting malware - patching vulnerabilities
+Examples: 
+- deleting malware 
+- patching vulnerabilities
 
 ### 4. Recovery
 
 Restore systems and return operations to normal.
 
-Activities include: - restoring from backups - validating system
-integrity
+Activities include: 
+- restoring from backups 
+- validating system integrity
 
 ### 5. Follow‑Up
 
