@@ -711,3 +711,502 @@ Investigators must understand RAID configurations to reconstruct data
 properly during forensic imaging.
 
 ------------------------------------------------------------------------
+# Chapter 5: Steganography, Cryptography, Encryption, Hashing, and Digital Signatures
+
+## Steganography
+
+Steganography is the practice of hiding information inside other data so
+that the existence of the hidden information is concealed. Unlike
+encryption, which obscures the content of a message, steganography hides
+the presence of the message itself.
+
+Common steganography mediums include:
+
+### Image Steganography
+
+Data is hidden within image files by modifying pixel values in a way
+that is imperceptible to the human eye. A common technique is **Least
+Significant Bit (LSB) substitution**, where the smallest bit of a pixel
+value is altered to encode data.
+
+### Audio Steganography
+
+Hidden information is embedded within audio files. Methods include: -
+LSB encoding in sound samples - Phase coding - Spread spectrum encoding
+
+### Video Steganography
+
+Video combines image frames and audio tracks, offering multiple
+locations for hidden data. Investigators may analyze frame anomalies or
+embedded metadata.
+
+### Text Steganography
+
+Text steganography hides messages using formatting changes or linguistic
+tricks such as: - Extra spaces - Hidden characters - Word pattern
+manipulation
+
+Forensic investigators search for statistical anomalies, unusual file
+sizes, or modified metadata to detect steganography.
+
+------------------------------------------------------------------------
+
+## Cryptography
+
+Cryptography is the science of securing communication by converting
+readable information (**plaintext**) into an unreadable format
+(**ciphertext**). It ensures:
+
+-   Confidentiality
+-   Integrity
+-   Authentication
+-   Non‑repudiation
+
+------------------------------------------------------------------------
+
+## Encryption
+
+Encryption is the process of transforming plaintext into ciphertext
+using an algorithm and a key. Decryption reverses this process.
+
+Two major categories exist.
+
+### Symmetric Encryption
+
+-   Uses **one shared key** for both encryption and decryption.
+-   Faster and computationally efficient.
+-   Requires secure key exchange.
+
+Examples: - DES - AES - 3DES
+
+### Asymmetric Encryption
+
+Uses **two mathematically related keys**:
+
+-   Public key (shared openly)
+-   Private key (kept secret)
+
+Used for: - Secure key exchange - Digital signatures - Authentication
+
+Examples: - RSA - Diffie‑Hellman
+
+------------------------------------------------------------------------
+
+## Data Encryption Standard (DES)
+
+DES is a symmetric encryption algorithm developed in the 1970s.
+
+Characteristics: - 56‑bit key - Block cipher - Processes 64‑bit blocks
+
+Due to its short key length, DES is now considered insecure because
+modern hardware can brute‑force the key.
+
+------------------------------------------------------------------------
+
+## Advanced Encryption Standard (AES)
+
+AES replaced DES as the modern encryption standard.
+
+Key features:
+
+-   Block size: 128 bits
+-   Key sizes: 128, 192, or 256 bits
+-   Extremely resistant to brute‑force attacks
+-   Widely used for government and commercial encryption
+
+AES is currently the dominant encryption standard in most security
+systems.
+
+------------------------------------------------------------------------
+
+## Triple DES (3DES)
+
+3DES strengthens DES by applying the algorithm three times.
+
+Process: 1. Encrypt with key 1 2. Decrypt with key 2 3. Encrypt with key
+3
+
+Although more secure than DES, it is slower than AES and is gradually
+being phased out.
+
+------------------------------------------------------------------------
+
+## RSA Encryption
+
+RSA is a widely used asymmetric encryption algorithm.
+
+It is based on the mathematical difficulty of **factoring large prime
+numbers**.
+
+Applications include:
+
+-   Secure communications
+-   Digital signatures
+-   Key exchange protocols
+
+------------------------------------------------------------------------
+
+## Diffie‑Hellman Key Exchange
+
+Diffie‑Hellman is not an encryption method but a **secure key exchange
+protocol**.
+
+It allows two parties to establish a shared secret key over an insecure
+channel without transmitting the key itself.
+
+This method is widely used in:
+
+-   HTTPS
+-   VPN connections
+-   Secure messaging systems
+
+------------------------------------------------------------------------
+
+## Kasiski Examination
+
+The Kasiski Examination is a classical cryptanalysis technique used to
+break **polyalphabetic substitution ciphers**, such as the Vigenère
+cipher.
+
+It works by: 1. Finding repeated character sequences 2. Measuring
+distances between repetitions 3. Inferring likely key lengths
+
+This method was historically important in breaking classical encryption
+systems.
+
+------------------------------------------------------------------------
+
+## Cracking Modern Cryptographic Methods
+
+Cryptanalysis attempts to defeat encryption without knowing the key.
+
+Common attack models include:
+
+### Known Plaintext Attack
+
+The attacker has access to both: - plaintext - corresponding ciphertext
+
+This information is used to deduce the encryption key.
+
+### Chosen Plaintext Attack
+
+The attacker can choose plaintext messages and observe their encrypted
+versions. This allows deeper analysis of the encryption system.
+
+### Ciphertext‑Only Attack
+
+The attacker has only encrypted messages. Statistical analysis and brute
+force methods may be used to attempt decryption.
+
+### Related‑Key Attack
+
+The attacker observes encryptions performed with **different but
+mathematically related keys**, allowing weaknesses in the algorithm to
+be exploited.
+
+------------------------------------------------------------------------
+
+# Chapter 6: File Systems and Data Recovery
+
+## File Systems Used by Different Operating Systems
+
+### Windows File Systems
+
+Common Windows file systems include:
+
+-   **FAT32** -- older system used in legacy devices
+-   **exFAT** -- optimized for flash storage
+-   **NTFS** -- modern Windows file system supporting permissions,
+    journaling, and large file sizes
+
+NTFS is the most common file system encountered in digital forensics for
+modern Windows systems.
+
+### Linux File Systems
+
+Linux commonly uses:
+
+-   **ext2** -- early Linux filesystem
+-   **ext3** -- journaling version of ext2
+-   **ext4** -- modern Linux filesystem with improved reliability and
+    scalability
+
+### macOS File Systems
+
+Apple systems historically used:
+
+-   **HFS+ (Hierarchical File System Plus)**
+
+Modern macOS uses:
+
+-   **APFS (Apple File System)**
+
+APFS supports encryption, snapshots, and fast directory sizing.
+
+------------------------------------------------------------------------
+
+## Common Data Recovery Utilities
+
+Forensic investigators often use specialized tools to recover deleted or
+damaged data.
+
+Examples include:
+
+-   Autopsy / Sleuth Kit
+-   EnCase
+-   FTK (Forensic Toolkit)
+-   Recuva
+-   TestDisk
+
+These tools allow recovery of deleted files, analysis of disk images,
+and reconstruction of file systems.
+
+------------------------------------------------------------------------
+
+## Recovering Files from a Suspect Drive
+
+A typical forensic recovery process may include:
+
+1.  Remove the drive from the suspect system.
+2.  Connect the drive to a trusted forensic workstation.
+3.  Boot the workstation using a forensic operating environment.
+4.  Use write blockers to prevent modification of evidence.
+5.  Copy or image the drive contents.
+
+------------------------------------------------------------------------
+
+## If the Drive is Not Recognized
+
+If the system does not recognize the drive:
+
+-   Attempt hardware repair or controller replacement
+-   Use specialized forensic recovery hardware
+-   Access the raw sectors directly
+
+------------------------------------------------------------------------
+
+## Imaging Drive Content
+
+Forensic imaging creates an **exact bit‑for‑bit copy** of a storage
+device.
+
+Benefits:
+
+-   Preserves evidence integrity
+-   Allows investigators to analyze copies instead of original media
+-   Supports verification using hash values
+
+Common image formats include:
+
+-   RAW
+-   E01 (EnCase format)
+-   AFF
+
+------------------------------------------------------------------------
+
+## Recovering Data After Logical Damage
+
+Logical damage refers to file system corruption rather than physical
+damage.
+
+Recovery methods include:
+
+-   Rebuilding file allocation tables
+-   Recovering partition structures
+-   Using disk repair utilities
+
+------------------------------------------------------------------------
+
+## File Carving
+
+File carving recovers files by examining raw disk data rather than
+relying on the file system.
+
+It identifies file signatures (headers and footers) to reconstruct
+files.
+
+Examples:
+
+-   JPEG header: `FFD8`
+-   PDF header: `%PDF`
+
+File carving is useful when file system structures are destroyed.
+
+------------------------------------------------------------------------
+
+# Chapter 7: Disaster Recovery and Incident Response
+
+## Disaster Recovery Plans (DRP)
+
+A **Disaster Recovery Plan** outlines procedures to restore IT
+infrastructure after catastrophic events such as:
+
+-   cyberattacks
+-   natural disasters
+-   hardware failures
+-   data corruption
+
+The plan focuses primarily on restoring **technology systems and data**.
+
+------------------------------------------------------------------------
+
+## Business Continuity Plan (BCP) vs Disaster Recovery Plan (DRP)
+
+**Business Continuity Plan** Ensures that critical business operations
+continue during disruptions.
+
+**Disaster Recovery Plan** Focuses specifically on restoring IT systems
+and data after an incident.
+
+In short:
+
+BCP = keeping the business running\
+DRP = restoring technical infrastructure
+
+------------------------------------------------------------------------
+
+## Business Impact Analysis (BIA)
+
+A Business Impact Analysis identifies:
+
+-   critical systems
+-   operational dependencies
+-   financial losses caused by downtime
+
+It helps organizations prioritize recovery strategies.
+
+------------------------------------------------------------------------
+
+## Risk and Loss Metrics
+
+### Recovery Point Objective (RPO)
+
+Maximum acceptable amount of data loss measured in time.
+
+Example: backups every 4 hours → RPO = 4 hours.
+
+### Recovery Time Objective (RTO)
+
+Maximum acceptable downtime before services must be restored.
+
+### Single Loss Expectancy (SLE)
+
+Formula:
+
+SLE = Asset Value × Exposure Factor
+
+### Annualized Loss Expectancy (ALE)
+
+Formula:
+
+ALE = SLE × Annual Rate of Occurrence
+
+These metrics help quantify financial risk.
+
+------------------------------------------------------------------------
+
+## Common Vulnerability Scoring System (CVSS)
+
+CVSS is an industry standard used to rate the severity of security
+vulnerabilities.
+
+Scores range from **0 to 10** based on factors including:
+
+-   attack complexity
+-   exploitability
+-   impact on confidentiality, integrity, and availability
+
+------------------------------------------------------------------------
+
+## DREAD Risk Model
+
+DREAD is another vulnerability rating framework.
+
+It evaluates risk based on five factors:
+
+1.  **Damage Potential** -- severity of impact
+2.  **Reproducibility** -- ease of repeating the attack
+3.  **Exploitability** -- effort required to launch attack
+4.  **Affected Users** -- number of users impacted
+5.  **Discoverability** -- likelihood vulnerability will be found
+
+Each factor is rated to determine an overall risk score.
+
+------------------------------------------------------------------------
+
+## Types of Backups
+
+### Full Backup
+
+A full backup copies **all data**.
+
+Advantages: - easiest to restore
+
+Disadvantages: - time consuming - large storage requirements
+
+### Differential Backup
+
+Copies all data changed **since the last full backup**.
+
+Restoration requires: - last full backup - most recent differential
+backup
+
+### Incremental Backup
+
+Copies all data changed **since the last backup of any type**.
+
+Advantages: - smaller and faster backups
+
+Disadvantages: - restoration requires multiple backup sets.
+
+### Hierarchical Storage Management (HSM)
+
+HSM automatically moves older or less frequently accessed data to
+cheaper storage tiers.
+
+It effectively creates **continuous backup and archival storage**.
+
+------------------------------------------------------------------------
+
+## Incident Response Process
+
+A structured response process ensures incidents are handled effectively.
+
+### 1. Detection
+
+Identify potential security incidents through:
+
+-   monitoring systems
+-   intrusion detection systems
+-   user reports
+
+### 2. Containment
+
+Limit the damage by isolating affected systems or networks.
+
+Examples: - disconnect compromised machines - disable compromised
+accounts
+
+### 3. Eradication
+
+Remove the root cause of the incident.
+
+Examples: - deleting malware - patching vulnerabilities
+
+### 4. Recovery
+
+Restore systems and return operations to normal.
+
+Activities include: - restoring from backups - validating system
+integrity
+
+### 5. Follow‑Up
+
+After the incident:
+
+-   document lessons learned
+-   improve defenses
+-   update security policies
+
+This final stage strengthens the organization's future security posture.
+
