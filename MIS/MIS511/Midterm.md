@@ -594,32 +594,32 @@ Google's approach is to offer more customizable and adaptable AI services and mo
 
 Several forms of artificial intelligence systems are commonly used in modern software and data systems.
 
-- *LLMs (Large Language Models)*
+- **LLMs (Large Language Models)**
 Models trained on large text datasets that can understand and generate human language.  
 Used for tasks such as chatbots, summarization, coding assistance, and question answering.
 
-- *Classifiers*
+- **Classifiers**
 Machine learning models that categorize input data into predefined labels or groups.  
 Common uses include spam detection, sentiment analysis, fraud detection, and image recognition.
 
- - *Agents*
+ - **Agents**
 AI systems capable of autonomously performing multi-step tasks by reasoning, planning, and interacting with tools such as APIs, databases, or software systems.
 
-- *File Managers and Alterers*
+- **File Managers and Alterers**
 AI systems designed to read, organize, modify, and generate files such as documents, spreadsheets, code, and PDFs within a repository like online drives or local filesystems. 
 
-- *Orchestrators*
+- **Orchestrators**
 Systems that coordinate multiple AI models and tools within a workflow, managing how tasks are sequenced and how data moves between components.
 
-- *Embedding Models*
+- **Embedding Models**
 Models that convert data (such as text or images) into numerical vector representations that capture semantic meaning.  
 Commonly used in search, recommendation systems, and knowledge retrieval.
 
-- *Image Generators*
+- **Image Generators**
 Generative AI models that create images from text prompts or other inputs.  
 Often used in design, marketing, and media production.
 
- -*Audio Generators*
+ -**Audio Generators**
 AI models that generate or transform audio, including speech synthesis, music generation, and voice cloning.
 
 ## Principles for Responsible AI Use
