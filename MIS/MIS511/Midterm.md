@@ -538,9 +538,9 @@ Effective technology strategy requires **collaboration between business leadersh
 - A data project’s steps are often described as a cycle because the lessons learned and insights from one project typically inform the next
 - The final step of the process feeds back into the first
 
-Steps Include:
+**Steps Include:**
 
-1. Generation
+ 1. Generation
 2. Collection
 3. Processing
 4. Storage
@@ -567,14 +567,10 @@ Steps Include:
   
 ### Primary Types of Analytics
 
-- Descriptive
-  - "What Happened?"
-- Diagnostic
-  - "Why Did This Happen?"
-- Predictive
-  - "What Will Happen Next?"
-- Prescriptive Data Analytics
-  - "What Should We Do Next?"
+- Descriptive — "What Happened?"
+- Diagnostic — "Why Did This Happen?"
+- Predictive — "What Will Happen Next?"
+- Prescriptive Data Analytics — "What Should We Do Next?"
 
 
 ---
@@ -598,24 +594,24 @@ Google's approach is to offer more customizable and adaptable AI services and mo
 
 Several forms of artificial intelligence systems are commonly used in modern software and data systems.
 
-### LLMs (Large Language Models)
+- *LLMs (Large Language Models)*
 Models trained on large text datasets that can understand and generate human language.  
 Used for tasks such as chatbots, summarization, coding assistance, and question answering.
 
-### Classifiers
+- *Classifiers*
 Machine learning models that categorize input data into predefined labels or groups.  
 Common uses include spam detection, sentiment analysis, fraud detection, and image recognition.
 
-### Agents
+ - *Agents*
 AI systems capable of autonomously performing multi-step tasks by reasoning, planning, and interacting with tools such as APIs, databases, or software systems.
 
-### File Managers and Alterers
+- *File Managers and Alterers*
 AI systems designed to read, organize, modify, and generate files such as documents, spreadsheets, code, and PDFs within a repository like online drives or local filesystems. 
 
-### Orchestrators
+- *Orchestrators*
 Systems that coordinate multiple AI models and tools within a workflow, managing how tasks are sequenced and how data moves between components.
 
-### Embedding Models
+- *Embedding Models
 Models that convert data (such as text or images) into numerical vector representations that capture semantic meaning.  
 Commonly used in search, recommendation systems, and knowledge retrieval.
 
