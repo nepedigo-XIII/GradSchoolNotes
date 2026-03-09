@@ -611,15 +611,15 @@ AI systems designed to read, organize, modify, and generate files such as docume
 - *Orchestrators*
 Systems that coordinate multiple AI models and tools within a workflow, managing how tasks are sequenced and how data moves between components.
 
-- *Embedding Models
+- *Embedding Models*
 Models that convert data (such as text or images) into numerical vector representations that capture semantic meaning.  
 Commonly used in search, recommendation systems, and knowledge retrieval.
 
-### Image Generators
+- *Image Generators*
 Generative AI models that create images from text prompts or other inputs.  
 Often used in design, marketing, and media production.
 
-### Audio Generators
+ -*Audio Generators*
 AI models that generate or transform audio, including speech synthesis, music generation, and voice cloning.
 
 ## Principles for Responsible AI Use
