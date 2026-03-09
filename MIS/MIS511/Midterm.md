@@ -511,3 +511,137 @@ Common causes include:
 - Inadequate vendor management
 
 Effective technology strategy requires **collaboration between business leadership and IT professionals**.
+
+--- 
+
+## 13. Data Analytics
+
+### 'Quality' Data
+
+- **Accuracy** — Data correctly represents real-world values or events.
+- **Completeness** — Required fields and records are present with minimal missing data.
+- **Consistency** — Data remains uniform across datasets, systems, and time periods.
+- **Timeliness** — Data is up-to-date and available when needed for analysis.
+- **Validity** — Data conforms to defined formats, ranges, and business rules.
+- **Uniqueness** — Duplicate records are minimized or eliminated.
+- **Reliability** — Data is collected and maintained through trustworthy processes and sources.
+
+### Data Ecosystem:
+- Encompasses everything that handles, organizes, and processes data
+- Programming languages, algorithms, cloud services, and general infrastructure
+- No two organizations leverage the same data in the same way.
+- Each organization has a unique data ecosystem.
+
+### Data Life Cycle:
+- Describes the path data takes from when it’s first generated to when it’sinterpreted into actionable insights.
+- This life cycle can be split into eight steps
+- A data project’s steps are often described as a cycle because the lessons learned and insights from one project typically inform the next
+- The final step of the process feeds back into the first
+
+Steps Include:
+
+1. Generation
+2. Collection
+3. Processing
+4. Storage
+5. Management
+6. Analysis
+7. Visualization
+8. Interpretation
+
+
+### Power BI
+ - Cost: Low, generally more affordable
+ - Ease of Use: High (Excel-like, intuitive)
+ - Integration: Tight integration with Microsoft 365/Azure
+ - Power BI is better for data governance, security, and compliance
+ - AI within the Microsoft ecosystem
+
+### Tableau
+ - Cost: High (Enterprise-focused pricing)
+ - Ease of Use: Moderate (Steeper learning curve)
+ - Integration: Independent; connects to diverse sources 
+ - Handles larger datasets 
+ - Offers superior visual storytelling
+ - Greater deployment flexibility
+  
+### Primary Types of Analytics
+
+- Descriptive
+  - "What Happened?"
+- Diagnostic
+  - "Why Did This Happen?"
+- Predictive
+  - "What Will Happen Next?"
+- Prescriptive Data Analytics
+  - "What Should We Do Next?"
+
+
+---
+
+# 14. Microsoft vs Google in AI
+
+## Microsoft Approach
+
+Microsoft's approach is to offer as much integration with existing services and ecosystems as possible, incentivizing AI use with their older suite offerings like OneDrive, Sharepoint, Teams, PowerBI, etc. Their models aren't as powerful or resource efficient as some other competitors within the industry, but this is offset by that integration with products many companies already rely upon. They even offer Copilot Studio, a GUI used to create agents that integrate with services like Teams and can be trained to access information from Sharepoint in a way more adapted to the business. 
+
+
+## Google's Approach
+
+Google's approach is to offer more customizable and adaptable AI services and models, with the models they offer being significantly more powerful for each weight class and offering a wider range of submodels for tailored use. They also offer a series of mdoesl capable of performing operations on a local file system, being able to read and write to files on your machine. 
+
+--- 
+
+# 15. General AI 
+
+## Classifications
+
+Several forms of artificial intelligence systems are commonly used in modern software and data systems.
+
+### LLMs (Large Language Models)
+Models trained on large text datasets that can understand and generate human language.  
+Used for tasks such as chatbots, summarization, coding assistance, and question answering.
+
+### Classifiers
+Machine learning models that categorize input data into predefined labels or groups.  
+Common uses include spam detection, sentiment analysis, fraud detection, and image recognition.
+
+### Agents
+AI systems capable of autonomously performing multi-step tasks by reasoning, planning, and interacting with tools such as APIs, databases, or software systems.
+
+### File Managers and Alterers
+AI systems designed to read, organize, modify, and generate files such as documents, spreadsheets, code, and PDFs within a repository like online drives or local filesystems. 
+
+### Orchestrators
+Systems that coordinate multiple AI models and tools within a workflow, managing how tasks are sequenced and how data moves between components.
+
+### Embedding Models
+Models that convert data (such as text or images) into numerical vector representations that capture semantic meaning.  
+Commonly used in search, recommendation systems, and knowledge retrieval.
+
+### Image Generators
+Generative AI models that create images from text prompts or other inputs.  
+Often used in design, marketing, and media production.
+
+### Audio Generators
+AI models that generate or transform audio, including speech synthesis, music generation, and voice cloning.
+
+## Principles for Responsible AI Use
+
+- **Transparency** — Users understand when and how AI is being used.
+- **Accountability** — Humans remain responsible for AI-driven decisions and outcomes.
+- **Privacy Protection** — Personal and sensitive data is handled securely and ethically.
+- **Fairness** — AI outputs are monitored to reduce discrimination or bias.
+- **Human Oversight** — Critical decisions include human review or approval.
+- **Security** — AI systems are protected from misuse, manipulation, or adversarial attacks.
+- **Appropriate Use** — AI is applied only to tasks where it is suitable and reliable.
+
+## Principles for Responsible AI Creation
+
+- **Bias Mitigation** — Training data and models are evaluated to reduce systemic bias.
+- **Data Quality** — Training datasets are accurate, representative, and properly curated.
+- **Explainability** — Models are designed so their outputs can be interpreted or justified.
+- **Safety Testing** — Models undergo rigorous testing before deployment.
+- **Governance** — Development follows documented policies, standards, and oversight.
+- **Model Monitoring** — Systems are continuously evaluated for drift, errors, or unintended behavior.
+- **Ethical Data Sourcing** — Training data is obtained legally and with appropriate consent.
