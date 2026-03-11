@@ -1399,3 +1399,382 @@ Index.dat is a hidden database file used by older versions of Microsoft Internet
   **Background Activity Moderator (BAM)** and **Desktop Activity Moderator (DAM)** track **application execution history and background process activity** for power and resource management.
 
 ---
+
+# CH9 + 10 Linux + MacOS Forensics
+
+## Brief Linux History
+
+[Brief History of Linux]('Linux Development History.jpg')
+
+## Important Linux Commands
+- **ls**  
+  Lists files and directories within the current or specified directory.
+
+- **cp**  
+  Copies files or directories from one location to another.
+
+- **mkdir**  
+  Creates a new directory.
+
+- **cd**  
+  Changes the current working directory.
+
+- **rm**  
+  Deletes files or directories.
+
+- **rmdir**  
+  Removes an empty directory.
+
+- **mv**  
+  Moves or renames files and directories.
+
+- **ps**  
+  Displays information about currently running processes.
+
+- **pstree**  
+  Shows running processes in a **tree structure**, illustrating parent-child relationships.
+
+- **top**  
+  Displays real-time system resource usage, including CPU, memory, and active processes.
+
+- **fsck**  
+  Checks and repairs file system errors.
+
+- **fdisk**  
+  Utility used to create, delete, and manage disk partitions.
+
+- **mount**  
+  Attaches a file system or storage device to the directory tree so it can be accessed.
+
+- **lsof**  
+  Lists **open files** and the processes that are using them.
+
+- **lsattr**  
+  Displays special file attributes (such as immutable or append-only flags) on Linux file systems.
+
+- **dmesg**  
+  Displays messages from the Linux kernel ring buffer. These messages typically include hardware detection, driver initialization, and system boot events. It is commonly used to troubleshoot hardware issues or view kernel-level system logs.
+
+- **grep**  
+  Searches for specific patterns of text within files or command output. It supports regular expressions and is commonly used in pipelines to filter results from other commands.
+
+- **history**  
+  Displays a list of previously executed commands in the current shell session. This allows users to review, reuse, or rerun earlier commands.
+
+- **pgrep**  
+  Searches for running processes by name and returns their process IDs (PIDs). It simplifies locating processes compared to manually searching through full process listings.
+
+- **kill**  
+  Sends a signal to a process, usually to terminate it. The most common signal is `SIGTERM`, which requests a graceful shutdown, though stronger signals such as `SIGKILL` can force termination.
+
+- **file**  
+  Determines the type of a file by examining its contents rather than relying solely on the file extension. It can identify file formats such as text files, executables, images, and archives.
+
+- **su**  
+  Allows a user to switch to another user account within the current terminal session. It is commonly used to temporarily obtain superuser (root) privileges.
+
+- **who**  
+  Displays a list of users currently logged into the system, including their login terminals and login times.
+
+- **finger**  
+  Provides information about system users, such as their login name, real name, last login time, and sometimes additional profile information if configured.
+
+- **dd**  
+  A low-level data copying utility used to copy and convert raw data between files, devices, or partitions. It is frequently used for disk imaging, creating backups, or performing forensic disk acquisition.
+
+
+## Linux Boot Process
+
+1. **BIOS performs POST**  
+The system firmware (**BIOS/UEFI**) performs the **Power-On Self-Test (POST)** to verify that hardware such as the CPU, RAM, and storage devices are functioning. After POST, it searches for a bootable device.
+
+2. **MBR (Master Boot Record)**  
+The firmware loads the **bootloader** from the MBR of the selected disk. The bootloader is responsible for loading the Linux kernel.
+
+- **GRUB (Grand Unified Bootloader)** – The most common Linux bootloader; allows selecting between operating systems or kernel versions.  
+- **LILO (Linux Loader)** – An older Linux bootloader that loads the kernel directly but lacks the interactive features of GRUB.
+
+3. **Kernel**  
+The **Linux kernel** is loaded into memory and begins system initialization.
+
+- **Initializes devices** – Detects and initializes hardware drivers needed for operation.  
+- **Real mode to protected mode** – Switches the CPU from basic firmware execution mode to protected mode so the operating system can access full system memory and capabilities.
+
+4. **INIT**  
+The first user-space process started by the kernel (**PID 1**). It initializes the system environment and starts background services and system processes. Modern systems often use **systemd** as a replacement for the traditional init system.
+
+5. **Runlevels**  
+Define the **operational state of the system**, determining which services start.
+
+Common traditional runlevels:
+
+- **0** – Halt (shutdown)  
+- **1** – Single-user mode (maintenance)  
+- **3** – Multi-user mode without GUI  
+- **5** – Multi-user mode with graphical interface  
+- **6** – Reboot
+
+## Common Distros
+
+- Ubuntu
+- Red Hat Enterprise Linux (Paid)
+- OpenSUSE
+- Debian
+- Mint
+- Fedora
+- CentOS
+
+## Linux Log Types
+
+- `/var/log/fail.log`: Failed user logins
+- `/var/log/kern.log`: Messages from the operating system’s kernel
+- `/var/log/lpr.log`:- Items that have been printed
+- `/var/log/mail.*`: Email activity
+- `/var/log/mysql.*`: MySQL database server activity
+- `/var/log/apache2/*`: Apache web server activity
+- `/var/log/lighttpd/*`: Lighttpd web server activity
+- `/var/log/apport.log`: Application crashes
+- Intrusion detection system logs Suspicious traffic
+
+## Key Linux Directories
+
+- `/root`: Home directory for root user / admin
+- `/bin`: Contains program binaries
+- `/sbin`: Contains special binaries, not intended for average user(s)
+- `/etc`: Contains config files, attractive to hackers
+- `/dev`: Contains device files, interfaces for devices. Naming conventions are as follows:
+    - `/hd`: Hard Drive
+    - `/fd`: Floppy Drive
+    - `/cd`: CD
+- `/mnt`: Mounted devices, need to mount drives before use. Checking what is here shows whats currently mounted.
+- `/boot`: COntains files critical for boot. GRUB looks here, Kernel images often here. 
+- `/usr`: Contains subdirectories for each user acount
+- `/tmp`: Contains files that are only temporary, can find data on recent activity here. Will be removed on reboot.
+- `/var/tmp`: Made available for programs that need temp file space, remains for 30 days.
+- `/var/backups`: Contains backup of system files and shadow copies.
+- `/var/spool`: Contains print queue, Seth's mortal enemy.
+- `/proc`: The /proc directory in Linux is a pseudo-filesystem that provides a dynamic interface to kernel data structures, exposing real-time system and process information.
+- `/run`: Volatile runtime data
+
+## tmpfs
+
+Linux file system that only resides in memory, never written to local disk. When unmounted, entire system is wiped. Data here must be captured before shutdow:
+
+`volatility –profile=Linuxthisx86 –f /root/lime-tmpfs linux_tmpfs`
+    
+## Undeleting Files in Linux
+
+1. **Move the system to single-user mode**  
+   Boot or switch the system into single-user (maintenance) mode to minimize disk activity. This reduces the risk of overwritten data on the partition where the deleted file existed.
+
+2. **Search the raw partition for known text**  
+   If the deleted file contained known strings or identifiable text, the raw disk device can be searched directly for those patterns.
+
+3. **Use `grep` to scan the partition**  
+   The `grep` command can search a raw device for matching text and return the byte offset of matches.
+
+   Example:
+   ```bash
+   grep -b 'search-text' /dev/partition > file.txt
+   ```
+
+------------------------------------------------------------------------
+
+## Brief History of MacOS
+
+[History of MacOS]('MacOS Development History.jpg')
+
+## File Systems
+
+- **Macintosh** : Legacy
+- **Hierarchical File System (HFS)**: Macintosh Plus and above
+- **HFS +**: Current Mac OS X system after MacOS 8.1
+
+## HFS+ Partition Types
+- GUID Partition Table
+- Apple Partition Map
+- Master Boot Record (MBR)
+
+## Boot Camp Assistant
+Supports 1 additional operating system, supports Windows 10. Important to assess in forensics.
+
+## Mac OS Log types
+
+- `var/log/`: General log repo, data on removable media and devices such as serial numbers
+- `var/spool/`: Information on printed documents like name and who printed
+- `private/var/audit/`: Logs of system audits
+- `private/var/VM/`: Contains swap and sleep image files, and important to assess.
+- `Library/Receipts/`: Software and system updates 
+- `Library/Mobile/`: iCloud sync information
+- `/Users/<user>/.bash_history`: Bash shell activities
+- `/var/vm/`: Lists of recently opened applications and temporary application data
+- `/Users/`: User specific files and preferences
+- `/Users/<user>/Library/Preferences`: Maintains preferences of deleted programs
+
+## Important Mac Directories
+
+- The `/Volumes` Directory
+The `/Volumes` directory is the mount point where macOS attaches external and additional storage devices. When a disk, USB drive, or network share is mounted, it typically appears as a subdirectory within `/Volumes`. Each mounted volume is represented as its own folder, allowing the system and users to access the contents through the standard file system hierarchy.
+
+- The `/Users` Directory
+The `/Users` directory stores the home folders for all user accounts on the system. Each user has a dedicated subdirectory that contains personal files, application settings, documents, downloads, and desktop items. It also includes a `Shared` directory, which allows files to be accessed by multiple user accounts on the same machine.
+
+- The `/Applications` Directory
+The `/Applications` directory contains application bundles installed for all users of the system. Most macOS software is installed here and can be launched directly from this location or through Finder and Launchpad. Applications stored here are accessible system-wide, unlike applications placed in a user’s personal `~/Applications` directory.
+
+- The `/Network` Directory
+The `/Network` directory provides access to network resources that are available through directory services or network file systems. It can display shared servers, network volumes, or resources discovered through protocols such as NFS or SMB. In many modern macOS setups it is not heavily used by default, but it still serves as a standardized mount location for network-based resources.
+
+- The `/etc` Directory
+The `/etc` directory contains important system configuration files used by the operating system and installed services. In macOS, `/etc` is largely a compatibility layer that points to configuration data stored elsewhere (often within `/private/etc`). Files located here may control network settings, hostnames, service configurations, and other low-level system parameters.
+
+- The `/Library/Preferences/SystemConfiguration/com.apple.preferences.plist` File
+The `com.apple.preferences.plist` file located within `/Library/Preferences/SystemConfiguration/` stores system-level configuration settings used by macOS. Property list (`.plist`) files are structured data files that store application or system preferences in key-value format. This particular file may contain configuration data that influences system behavior, network settings, or global preference values used by macOS services.
+
+## Analysis Steps and Target Disk Mode
+Create a sound copy of disk contents,  `dd` and `netcat`. Be sure to begin in Target Disk Mode.
+
+## Undeleting in Mac OS
+
+- Similar to Windows, when file is deleted, references to file are gone and clusters might be used and overwritten
+- Even if data is overwritten, data might exist in unallocated space and in index nodes
+- Deleted files moved to the Trash folder, similar to Recycle Bin in Windows
+- Mac OS Trash folder is .Trash, a hidden folder on the root directory of file system
+
+---
+
+# CH 11 Email Forensics
+
+## Email Process Overview
+
+1. Sender uses a mail client to send a message
+2. Message travels to multiple mail servers
+    - Each mail server sends the message closer to its destination
+3. Destination mail server stores the message
+4. Receiver uses a mail client to retreive the message from mail server
+
+## Email Contents
+
+Emails can reveal:
+
+- Messages relevant to the investigation
+- Email addresses related to the investigation
+- Sender and recipient info
+- Data on anyone copied on the email
+- Email content
+- IPs
+- Dates and times
+- User info
+- Attachments
+- Passwords
+- Application logs
+
+
+## Email Protocols
+
+-SMTP
+-POP3
+-IMAP
+
+## Potentially Hazardous Emails
+
+- Spoofing: Email appears to come from someone or someplace other than the real sender or location. First machine to receive spoofed message records machine’s real IP address. Header contains both the faked IP and the real IP address
+
+- Anon. Remail: Anonymizer strips identifying information before forwarding it with the
+anonymous computer’s IP address. To find out who sent remailed email, examine logs maintained by remailer or anonymizer companies. Many websites let someone send an email and choose any “From” address
+
+- `Valid` Email:  May appear legitimate, contains suspicious content and potentially dangerous URLs.
+
+## RFC 2822
+Standardized format for emails and headers, uniform regardless of OS. Header records journey of email through each server. 
+
+Header must include:
+- `FROM` email address, optionally name field 
+- `DATE` field
+
+Header should include:
+- `Message-ID` auto generated field
+- `In-Reply-TO` id field
+
+## RFC 3864
+
+RFC 3864 defines standard email header fields and conventions for Internet messages, specifying how mail clients and servers handle routing, threading, and metadata. Key headers include:
+
+- **To**  
+  The primary recipient(s) of the email. This field contains one or more email addresses to which the message is directed.
+
+- **Subject**  
+  A brief summary or title of the email’s content. It helps recipients quickly identify the purpose or topic of the message.
+
+- **Cc / Bcc**  
+  - **Cc (Carbon Copy):** Recipients who receive a copy of the email, visible to all other recipients.  
+  - **Bcc (Blind Carbon Copy):** Recipients who receive a copy without other recipients seeing their addresses.
+
+- **Content-Type**  
+  Specifies the media type of the email body (e.g., `text/plain`, `text/html`, `multipart/alternative`) and character encoding, allowing clients to render messages correctly.
+
+- **Precedence**  
+  Used to indicate the importance or handling of the message, often set to values like `bulk`, `list`, or `normal` to guide automated processing.
+
+- **Received**  
+  Contains trace information of the message as it passes through mail servers. Each mail server adds a new `Received` line, creating a path for debugging or auditing message delivery.
+
+- **References**  
+  Lists message IDs of previous emails in a thread, enabling proper conversation threading in email clients.
+
+- **Reply-To**  
+  Specifies an alternate email address for responses, overriding the `From` field if present.
+
+- **Sender**  
+  Indicates the actual sender of the message, which may differ from the `From` field if the message is sent on behalf of someone else.
+
+
+## Viewing Headers
+
+1. Select `inbox` from left menu
+2. Right click the message you wish to view and select `View Message Source`
+
+On Mac
+2. `View` of selected message
+3. Select `Message`
+4. Select `Long Headers`
+
+
+## Important Email Files
+
+- **`.pst` (Personal Storage Table)**  
+  A file format used by Microsoft Outlook to store copies of emails, calendar events, contacts, and other mailbox items locally. `.pst` files are typically used for personal email accounts and can be archived or backed up.
+
+- **`.ost` (Offline Storage Table)**  
+  An Outlook file that allows users to work offline with an Exchange or Microsoft 365 mailbox. Changes made offline are synchronized with the server when a connection is re-established.
+
+- **`.mbx / .dbx`**  
+  - **`.mbx`**: A mailbox file format used by older Unix-based or legacy email clients (e.g., early versions of macOS Mail) to store emails in a single text-based file.  
+  - **`.dbx`**: Used by Microsoft Outlook Express to store email folders. Each `.dbx` file represents a single folder such as Inbox, Sent Items, or Drafts.
+
+- **`.emi` (Eudora Mail Index)**  
+  A file format used by the Eudora email client to index and manage messages stored on disk. It works alongside message storage files to enable fast searching and retrieval.
+
+
+## Relevant Email Laws
+
+- **4A**  
+  Refers to the Fourth Amendment of the U.S. Constitution, which protects against unreasonable searches and seizures. In the context of email, it establishes legal boundaries for government access to private electronic communications without a warrant.
+
+- **ECPA (Electronic Communications Privacy Act, 1986)**  
+  Protects electronic communications while in transit and in storage. It regulates government access to emails, phone calls, and other digital communications, requiring warrants or court orders for certain types of interception.
+
+- **CAN-SPAM Act (Controlling the Assault of Non-Solicited Pornography And Marketing, 2003)**  
+  Regulates commercial email messages in the U.S., establishing requirements for sender identification, opt-out mechanisms, and prohibitions against deceptive subject lines or headers.
+
+- **18 USC 2252B**  
+  U.S. federal law criminalizing the distribution, receipt, or possession of child pornography via electronic means, including email. It provides specific provisions for investigating digital communications in such cases.
+
+- **CALEA (Communications Assistance for Law Enforcement Act, 1994)**  
+  Requires telecommunications providers to design systems that allow law enforcement to conduct authorized electronic surveillance, including access to email transmissions, while maintaining network integrity.
+
+- **FISA (Foreign Intelligence Surveillance Act, 1978)**  
+  Governs surveillance of foreign intelligence targets in the U.S., including email and electronic communications. Provides a legal framework for monitoring non-U.S. persons while protecting U.S. citizens’ rights.
+
+- **Patriot Act (Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism, 2001)**  
+  Expanded the government’s ability to access electronic communications, including emails, for counterterrorism purposes. Includes provisions for wiretaps, records access, and enhanced investigative powers.
