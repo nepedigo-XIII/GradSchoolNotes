@@ -509,6 +509,15 @@ Polyalphabetic cipher using multiple substitution alphabets.
 
 ------------------------------------------------------------------------
 
+## Poly vs. Mono Alphabetic
+
+Mono Alphabetic cyphers make use of a singular set of characters, meaning there is a one to one translation of characters.
+
+Poly Alphabetic cyphers use multiple sets, meaning one character can be translated to plural different characters.
+
+
+------------------------------------------------------------------------
+
 ## Symmetric vs Asymmetric Encryption
 
   Type         Description
@@ -733,3 +742,70 @@ Windows systems.
 Copy creates a duplicate file, with the permissions of the target folder.
 
 Cutting a file, if it stayings on the same volume, does not change the permissions to that of the target folder.
+
+---
+
+# Expanded Explanations
+
+The following sections provide additional clarification and context for the concepts outlined in the study guide.
+
+## Digital Forensics
+Digital forensics is a specialized discipline within forensic science that focuses on evidence stored or transmitted in digital form. Unlike traditional evidence, digital evidence is highly volatile and can be altered simply by powering a device on or connecting it to a network. Because of this, forensic investigators must follow strict procedures to maintain **evidence integrity** and **chain of custody**. Digital forensics is used in criminal investigations, corporate incident response, civil litigation, and national security cases.
+
+## Operating Systems
+Operating systems act as an intermediary layer between hardware and software. They allocate computing resources such as processor time, memory, and storage while providing services that allow applications to function correctly. Examples include Windows, Linux, and macOS. Understanding the OS is critical in forensic investigations because artifacts such as logs, configuration files, and system registries are managed by the OS.
+
+## Scientific Method in Forensics
+Digital forensic investigations mirror the traditional scientific method. Hypotheses are formed about what occurred on a system, evidence is collected to test those hypotheses, and conclusions are formed based on verifiable data. Repeatability and documentation are essential so that other investigators or courts can reproduce the findings.
+
+## The Daubert Standard
+The Daubert Standard emerged from the U.S. Supreme Court case *Daubert v. Merrell Dow Pharmaceuticals (1993)*. It requires judges to act as “gatekeepers” who evaluate whether scientific testimony is reliable and relevant before allowing it in court. Digital forensic tools and methodologies may be challenged under this standard, making documentation and validation of tools extremely important.
+
+## Networking Fundamentals
+Networking knowledge helps investigators understand how systems communicate and how attackers may have accessed a system. Logs often contain IP addresses, port numbers, and timestamps that help reconstruct events across networks.
+
+## Antiforensics
+Antiforensic techniques are methods used by attackers to hide their activities or destroy potential evidence. Examples include wiping utilities, log manipulation, timestomping (changing file timestamps), and encryption. Investigators must recognize these techniques to identify when evidence may have been intentionally concealed.
+
+## Identity Theft
+Identity theft commonly occurs when attackers gain access to personally identifiable information (PII) such as Social Security numbers, bank credentials, or authentication tokens. These attacks may occur through phishing campaigns, database breaches, or malware infections.
+
+## SQL Injection
+SQL injection exploits poorly sanitized input fields in web applications. Attackers insert database commands into user input fields to manipulate backend queries. This can lead to unauthorized data retrieval, modification, or deletion of entire databases.
+
+## Order of Volatility
+The order of volatility principle states that investigators should collect the most fragile data first. Data stored in CPU registers and memory disappears once power is lost, while data stored on disks or backups remains available longer.
+
+## Disk Imaging
+Bit‑level imaging is critical in forensic analysis because it ensures that investigators obtain an exact duplicate of the original storage device. Imaging tools also compute cryptographic hashes before and after acquisition to verify that the image has not been altered.
+
+## RAID
+Redundant Array of Independent Disks (RAID) combines multiple disks into a single logical storage system. RAID configurations improve performance, reliability, or both. Investigators must understand RAID because data may be distributed across multiple disks.
+
+## Steganography
+Steganography embeds hidden information within digital files so that the existence of the message is concealed. Images are common carriers because slight pixel modifications are difficult for humans to detect.
+
+## Hashing
+Hash functions convert data into fixed‑length values called hashes or digests. Even a small change in input data results in a completely different hash value. Forensic investigators use hashing to verify that evidence has not changed during analysis.
+
+## File Systems
+File systems organize how data is stored and retrieved on disks. They define how files are named, how metadata is stored, and how disk space is allocated. Understanding file systems allows investigators to recover deleted files and interpret raw disk structures.
+
+## File Carving
+File carving is used when file system metadata is damaged or missing. The technique scans raw disk data for recognizable file headers and footers (known as signatures) to reconstruct files.
+
+## Windows Registry
+The Windows Registry is one of the most important forensic artifacts in Windows systems. It stores configuration settings, installed software information, startup programs, and user activity traces.
+
+## Event Logs
+Windows event logs record system activity such as login attempts, service failures, and security events. These logs often provide a timeline of events that investigators use to reconstruct incidents.
+
+## Copy vs Cut
+Understanding file operations is important in investigations. Copying a file creates a new instance of the file in the destination directory. Cutting (moving) a file within the same filesystem typically only updates directory references rather than duplicating the file's data blocks. This difference can affect timestamps, permissions, and forensic interpretation of file activity.
+
+
+------------------------------------------------------------------------
+
+## What was the kitty hiding in Lab 3
+
+I'm pretty sure it was a document guide on Tor browser
