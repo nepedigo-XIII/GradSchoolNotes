@@ -585,6 +585,12 @@ A psychological framework explaining how individuals respond to threats.
 
 ---
 
+<br>
+<br>
+<br>
+
+
+
 ## **`BCPM (Business Continuity and Disaster Recovery Planning) and IR (Incident Response)`**
 
 ### Why Have a Plan?
