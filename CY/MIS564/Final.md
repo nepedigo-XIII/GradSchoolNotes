@@ -223,23 +223,17 @@ Organizations have several strategies to manage risk:
 ---
 
 ### Effective SETA Principles
-1. **Train leaders first**
-   - Leadership buy-in drives organizational culture and compliance
+1. **Train leaders first**: Leadership buy-in drives organizational culture and compliance
 
-2. **Use formal and informal communication**
-   - Policies, emails, workshops, and casual reinforcement all contribute
+2. **Use formal and informal communication**: Policies, emails, workshops, and casual reinforcement all contribute
 
-3. **Interactive communication**
-   - Simulations, phishing tests, discussions, and hands-on activities improve retention
+3. **Interactive communication**: Simulations, phishing tests, discussions, and hands-on activities improve retention
 
-4. **Promote employee agency**
-   - Employees should feel they have input and ownership in policies
+4. **Promote employee agency**: Employees should feel they have input and ownership in policies
 
-5. **Leaders teach security**
-   - Security becomes part of daily operations, not just IT’s responsibility
+5. **Leaders teach security**: Security becomes part of daily operations, not just IT’s responsibility
 
-6. **Use real incidents**
-   - Demonstrates real-world consequences and increases perceived relevance
+6. **Use real incidents**: Demonstrates real-world consequences and increases perceived relevance
 
 ---
 
@@ -256,20 +250,15 @@ Organizations have several strategies to manage risk:
 A psychological framework explaining how individuals respond to threats.
 
 #### Components:
-1. **Perceived Vulnerability**
-   - Belief about the likelihood of being affected by a threat
+1. **Perceived Vulnerability**: Belief about the likelihood of being affected by a threat
 
-2. **Perceived Severity**
-   - Belief about the seriousness of the consequences
+2. **Perceived Severity**: Belief about the seriousness of the consequences
 
-3. **Response Efficacy**
-   - Belief that the recommended action will mitigate the threat
+3. **Response Efficacy**: Belief that the recommended action will mitigate the threat
 
-4. **Self-Efficacy**
-   - Confidence in one’s ability to perform the action
+4. **Self-Efficacy**: Confidence in one’s ability to perform the action
 
-5. **Response Cost**
-   - Perceived barriers (time, effort, inconvenience) to taking action
+5. **Response Cost**: Perceived barriers (time, effort, inconvenience) to taking action
 
 > **Application:** Effective training increases vulnerability, severity, efficacy, and confidence while minimizing perceived cost.
 
