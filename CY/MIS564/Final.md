@@ -441,8 +441,7 @@ A psychological framework explaining how individuals respond to threats.
 
 ---
 
-## ==**`Investment (Cybersecurity Study Guide)`**==
-
+## **`Cybersecurity Investment`**
 ### Underinvestment in Cybersecurity
 - Organizations frequently **underinvest in cybersecurity** despite increasing threats.
 - Common reasons:
