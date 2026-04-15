@@ -1,5 +1,9 @@
 # Final Study Guide for MIS564 Organizational Cyber Security
 
+<br>
+<br>
+<br>
+
 ## **`Risk Management`**
 
 
@@ -151,6 +155,10 @@ Organizations have several strategies to manage risk:
 
 ---
 
+<br>
+<br>
+<br>
+
 ## **`SETA (Security Education, Training, and Awareness)`**
 
 ### Sanctions (Definition)
@@ -285,6 +293,10 @@ A psychological framework explaining how individuals respond to threats.
    - *Training implication:* Align security with business goals
 
 ---
+
+<br>
+<br>
+<br>
 
 ## **`Management Standards`**
 
@@ -440,6 +452,10 @@ A psychological framework explaining how individuals respond to threats.
 > **Key Takeaway:** A one-size-fits-all approach to cybersecurity is ineffective; controls must be adapted to the organization’s context.
 
 ---
+
+<br>
+<br>
+<br>
 
 ## **`Cybersecurity Investment`**
 ### Underinvestment in Cybersecurity
