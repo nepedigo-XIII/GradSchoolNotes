@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 
-## `**Chapter 8: Windows OS Fundamentals**`
+## **`Chapter 8: Windows OS Fundamentals`**
 
 ### Core
 
@@ -35,7 +35,7 @@
 
 ------------------------------------------------------------------------
 
-## `**Chapter 9 - Linux Fundamentals**`
+## **`Chapter 9: Linux Fundamentals`**
 
 ### Boot Process
 
@@ -141,7 +141,7 @@ The shell is the command-line interface used to interact with the Linux operatin
 
 ------------------------------------------------------------------------
 
-## **Chapter 10 -- macOS & Unix Systems**
+## **`Chapter 10: macOS & Unix Systems`**
 
 ### Multiple File References
 
@@ -188,7 +188,7 @@ Unix-like systems (including macOS and Linux) support mechanisms that allow a si
 
 ------------------------------------------------------------------------
 
-## **Chapter 11 -- Email Forensics**
+## **`Chapter 11: Email Forensics`**
 
 Email forensics focuses on analyzing email content, metadata, and transmission paths to identify fraud, impersonation, and malicious activity. It is commonly used in cybercrime investigations, incident response, and legal discovery.
 
@@ -314,7 +314,7 @@ Email forensics combines header analysis, server logs, and legal data acquisitio
 
 ------------------------------------------------------------------------
 
-## **Chapter 12 -- Mobile Device Forensics**
+## **`Chapter 12: Mobile Device Forensics`**
 
 Mobile device forensics focuses on the acquisition, preservation, and analysis of data from smartphones and tablets. These devices store a high density of personal, location, and application data, making them critical in digital investigations.
 
@@ -455,7 +455,7 @@ SIM cards are critical for subscriber identity and network authentication in cel
 
 ------------------------------------------------------------------------
 
-## **Chapter 13 -- Networks & Attacks**
+## **`Chapter 13: Networks & Attacks`**
 
 This chapter covers how network communication is structured and how common attack types exploit weaknesses in that communication.
 
@@ -575,11 +575,11 @@ Packets are reassembled at the destination into the original message.
 
 ------------------------------------------------------------------------
 
-## **Chapter 14 -- Memory & Exploitation (Expanded)**
+## **`Chapter 14: Memory & Exploitation (Expanded)`**
 
 ---
 
-## **Heap vs Stack**
+### **Heap vs Stack**
 
 | Feature      | Stack                              | Heap                                  |
 |-------------|------------------------------------|----------------------------------------|
@@ -590,7 +590,7 @@ Packets are reassembled at the destination into the original message.
 | Lifetime    | Until function returns            | Until explicitly freed                |
 | Risks       | Stack overflow                    | Memory leaks, fragmentation           |
 
-### Stack Characteristics
+#### Stack Characteristics
 - Stores:
   - Local variables
   - Function parameters
@@ -600,7 +600,7 @@ Packets are reassembled at the destination into the original message.
 - Common attack target:
   - **Buffer overflow exploits**
 
-### Heap Characteristics
+#### Heap Characteristics
 - Used for dynamic allocation (`malloc`, `new`)
 - Managed by allocator (not automatic cleanup)
 - More flexible but error-prone
@@ -611,9 +611,9 @@ Packets are reassembled at the destination into the original message.
 
 ---
 
-## **Memory Issues**
+### **Memory Issues**
 
-### Segmentation Fault
+#### Segmentation Fault
 - Occurs when a program accesses invalid memory
 - Typical causes:
   - null pointer dereference
@@ -622,7 +622,7 @@ Packets are reassembled at the destination into the original message.
 - OS response:
   - process termination
 
-### Memory Leak
+#### Memory Leak
 - Memory allocated but never freed
 - Leads to:
   - gradual performance degradation
@@ -633,11 +633,11 @@ Packets are reassembled at the destination into the original message.
 
 ---
 
-## **Tables (Memory & System Management)**
+### **Tables (Memory & System Management)**
 
-### Hardware-Level Management
+#### Hardware-Level Management
 
-#### Page Tables
+##### Page Tables
 - Translate **virtual memory → physical memory**
 - Managed by the MMU (Memory Management Unit)
 - Key concepts:
@@ -645,16 +645,16 @@ Packets are reassembled at the destination into the original message.
   - page frames
   - address translation
 
-#### Benefits
+##### Benefits
 - Memory isolation between processes
 - Enables virtual memory abstraction
 - Prevents direct memory collisions
 
 ---
 
-### Software-Level Management
+#### Software-Level Management
 
-#### Process Tables
+##### Process Tables
 - Tracks active processes
 - Stores:
   - Process ID (PID)
@@ -662,7 +662,7 @@ Packets are reassembled at the destination into the original message.
   - memory mappings
   - resource handles
 
-#### File Tables
+##### File Tables
 - Tracks open files per process
 - Stores:
   - file descriptors
@@ -671,7 +671,7 @@ Packets are reassembled at the destination into the original message.
 
 ---
 
-## **Volatility Commands (Memory Forensics)**
+### **Volatility Commands (Memory Forensics)**
 
 Used in memory analysis frameworks (e.g., Volatility)
 
@@ -689,7 +689,7 @@ Used in memory analysis frameworks (e.g., Volatility)
     - injected libraries
     - malicious modules
 
-### Forensic Use Case
+#### Forensic Use Case
 - Detect:
   - rootkits hiding processes
   - malware persistence
@@ -697,69 +697,69 @@ Used in memory analysis frameworks (e.g., Volatility)
 
 ---
 
-## **Malware Types**
+### **Malware Types**
 
-### Trojan
+#### Trojan
 - Disguised as legitimate software
 - Requires user execution
 - Common goal: credential theft or backdoor access
 
-### Worm
+#### Worm
 - Self-replicating malware
 - Spreads across networks automatically
 - Does not require user interaction
 
-### Logic Bomb
+#### Logic Bomb
 - Triggered by a condition (time/event)
 - Dormant until activation
 - Example: deletes files on a specific date
 
-### Virus
+#### Virus
 - Attaches to legitimate files
 - Requires execution of host file
 - Spreads via file sharing or execution
 
-### Rootkit
+#### Rootkit
 - Designed for stealth and persistence
 - Hides processes, files, or system activity
 - Often operates at kernel level
 
 ---
 
-## **DLL Injection**
+### **DLL Injection**
 
-### Concept
+#### Concept
 - Technique where malicious code is inserted into a legitimate process
 
-### Mechanism
+#### Mechanism
 1. Target process is opened
 2. Memory is allocated inside process space
 3. Malicious DLL is written into memory
 4. Remote thread is created to execute it
 
-### Objectives
+#### Objectives
 - Privilege escalation
 - Stealth execution
 - Evading detection tools
 
-### Common Targets
+#### Common Targets
 - system processes (e.g., explorer.exe)
 - security software processes
 
 ---
 
-## **Sockets**
+### **Sockets**
 
-### Definition
+#### Definition
 - A socket is a communication endpoint defined by:
   - IP address
   - Port number
 
-### Structure
+#### Structure
 - Example:
   - `192.168.1.10:443`
 
-### Types
+#### Types
 - **TCP sockets**
   - connection-oriented
   - reliable transmission
@@ -768,14 +768,14 @@ Used in memory analysis frameworks (e.g., Volatility)
   - connectionless
   - faster but less reliable
 
-### Security Relevance
+#### Security Relevance
 - Used in:
   - command-and-control (C2) channels
   - remote shells
   - data exfiltration
 
 
-## **Process Directory**
+### **Process Directory**
 
 -   `/proc` is virtual (not stored on disk)
 
