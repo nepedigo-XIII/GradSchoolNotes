@@ -1,8 +1,7 @@
 # Cybersecurity & Systems Study Guide (Ch. 8--14) --- Updated
 
 ------------------------------------------------------------------------
-
-## **`Chapter 8: Windows OS Fundamentals`**
+## $${\color{lime}Chapter 8: Windows OS Fundamentals}$$
 
 ### Core
 
@@ -35,7 +34,7 @@
 
 ------------------------------------------------------------------------
 
-## **`Chapter 9: Linux Fundamentals`**
+## $${\color{lime}Chapter 9: Linux Fundamentals}$$ 
 
 ### Boot Process
 
@@ -141,7 +140,7 @@ The shell is the command-line interface used to interact with the Linux operatin
 
 ------------------------------------------------------------------------
 
-## **`Chapter 10: macOS & Unix Systems`**
+## $${\color{lime}Chapter 10: macOS + Unix Systems}$$
 
 ### Multiple File References
 
@@ -188,7 +187,7 @@ Unix-like systems (including macOS and Linux) support mechanisms that allow a si
 
 ------------------------------------------------------------------------
 
-## **`Chapter 11: Email Forensics`**
+##  ## $${\color{lime}Chapter 11: Email Forensics}$$ 
 
 Email forensics focuses on analyzing email content, metadata, and transmission paths to identify fraud, impersonation, and malicious activity. It is commonly used in cybercrime investigations, incident response, and legal discovery.
 
@@ -314,7 +313,7 @@ Email forensics combines header analysis, server logs, and legal data acquisitio
 
 ------------------------------------------------------------------------
 
-## **`Chapter 12: Mobile Device Forensics`**
+## $${\color{lime}Chapter 12: Mobile Device Forensics}$$
 
 Mobile device forensics focuses on the acquisition, preservation, and analysis of data from smartphones and tablets. These devices store a high density of personal, location, and application data, making them critical in digital investigations.
 
@@ -455,7 +454,7 @@ SIM cards are critical for subscriber identity and network authentication in cel
 
 ------------------------------------------------------------------------
 
-## **`Chapter 13: Networks & Attacks`**
+## $${\color{lime}Chapter 13: Networks + Attacks}$$
 
 This chapter covers how network communication is structured and how common attack types exploit weaknesses in that communication.
 
@@ -574,8 +573,7 @@ Packets are reassembled at the destination into the original message.
 
 
 ------------------------------------------------------------------------
-
-## **`Chapter 14: Memory & Exploitation (Expanded)`**
+## $${\color{lime}Chapter 14: Memory + Exploitation (Expanded)}$$ 
 
 ---
 
