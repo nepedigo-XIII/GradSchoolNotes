@@ -2,9 +2,9 @@
 
 ------------------------------------------------------------------------
 
-## **Chapter 8 -- Windows OS Fundamentals**
+## `**Chapter 8: Windows OS Fundamentals**`
 
-### Core Concepts
+### Core
 
 -   **Core of the OS:** Kernel The kernel is the central component of the operating system that operates at the highest privilege level. It manages hardware resources (CPU, memory, devices), handles process scheduling, enforces security boundaries, and provides an interface between software and hardware through system calls.
 
@@ -35,7 +35,7 @@
 
 ------------------------------------------------------------------------
 
-## **Chapter 9 -- Linux Fundamentals**
+## `**Chapter 9 - Linux Fundamentals**`
 
 ### Boot Process
 
